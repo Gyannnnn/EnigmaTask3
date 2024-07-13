@@ -1,0 +1,157 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Navigation bar styling */
+nav {
+  width: 100vw;
+  height: 80px;
+  background: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+nav div img {
+  height: 50px;
+  margin-left: 20px;
+}
+
+/* Logo styling */
+.colored-logo {
+  margin-left: 20px;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  -webkit-mask: url("./Assets/logo.png") no-repeat center;
+  mask: url("./Assets/logo.png") no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  transition: background-color 0.3s ease;
+}
+
+.colored-logo:hover {
+  background-color: #ff4655;
+}
+
+/* Navigation links styling */
+nav .anchor-div {
+  display: flex;
+  gap: 50px;
+}
+
+nav div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px;
+}
+
+nav div a:hover {
+  background: #333333;
+  border-radius: 10px;
+  text-decoration: underline;
+  text-decoration-color: orangered;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+/* Button styling */
+nav button {
+  padding: 10px 20px;
+  margin-right: 20px;
+  background: #ff4655;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+
+nav button:hover {
+  cursor: pointer;
+}
+
+/* Home section styling */
+#home {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background video styling */
+#home .background-video-div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#home video {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Home buttons and logo styling */
+#home .home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+#home .home-buttons a {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #ff4655;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50px;
+  font-weight: bolder;
+}
+#home .home-buttons img {
+  height: 100px;
+}
+
+/* Agents page styling */
+#agents {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+/* Guns page styling */
+#guns {
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+}
