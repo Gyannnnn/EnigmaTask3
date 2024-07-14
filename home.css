@@ -1,4 +1,10 @@
 /* Reset margins and paddings */
+@font-face {
+  font-family: tungstenBold;
+  src: url(./Assets/Fonts/Tungsten-Bold.ttf);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -26,16 +32,13 @@ nav {
   z-index: 10;
 }
 
-nav div img {
-  height: 50px;
-  margin-left: 20px;
-}
+
 
 /* Logo styling */
 .colored-logo {
   margin-left: 20px;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   background-color: white;
   -webkit-mask: url("./Assets/logo.png") no-repeat center;
   mask: url("./Assets/logo.png") no-repeat center;
@@ -146,12 +149,69 @@ nav button:hover {
 #agents {
   height: 100vh;
   width: 100vw;
-  background: black;
+  background: #ff4655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+#agents .agents-main{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+}
+#agents .agents-main .agent-img {
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#agents .agents-main .agent-img img{
+  width: 30vw;
+}
+#agents .agents-main .agent-info{
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+#agents .agents-main .agent-info a{
+  text-decoration: none;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all ease-in-out;
+}
+#agents .agents-main .agent-info p{
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  width: 40vw;
+}
+#agents .agents-main .agent-info a:hover{
+  background: white;
+  color: black;
+}
+#agents-heading{
+  font-size: 10vw;
+  font-family: tungstenBold;
+  color: white;
+  text-transform: uppercase;
+}
 /* Guns page styling */
 #guns {
   height: 100vh;
   width: 100vw;
-  background-color: red;
+  background-color: white;
 }
