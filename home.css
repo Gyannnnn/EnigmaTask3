@@ -4,7 +4,6 @@
   src: url(./Assets/Fonts/Tungsten-Bold.ttf);
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -32,8 +31,6 @@ nav {
   z-index: 10;
 }
 
-
-
 /* Logo styling */
 .colored-logo {
   margin-left: 20px;
@@ -57,14 +54,14 @@ nav .anchor-div {
   gap: 50px;
 }
 
-nav div a {
+nav div #nav-ancors {
   text-decoration: none;
   color: white;
   font-size: 20px;
   padding: 5px 20px;
 }
 
-nav div a:hover {
+nav div #nav-ancors:hover {
   background: #333333;
   border-radius: 10px;
   text-decoration: underline;
@@ -74,7 +71,7 @@ nav div a:hover {
 }
 
 /* Button styling */
-nav button {
+nav #about-us {
   padding: 10px 20px;
   margin-right: 20px;
   background: #ff4655;
@@ -82,9 +79,14 @@ nav button {
   color: white;
   border: none;
   font-size: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  /* text-decoration: none;
+  color: red;
+  background: #ff4655; */
 }
 
-nav button:hover {
+nav #about-us:hover {
   cursor: pointer;
   background: white;
   color: black;
@@ -142,10 +144,9 @@ nav button:hover {
   font-size: 1rem;
   border-radius: 50px;
   font-weight: bolder;
- 
 }
 #home .home-buttons a:hover {
-  background: white; 
+  background: white;
   color: black;
 }
 #home .home-buttons img {
@@ -161,13 +162,12 @@ nav button:hover {
   justify-content: center;
   align-items: center;
 }
-#agents .agents-main{
+#agents .agents-main {
   height: 80vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 #agents .agents-main .agent-img {
   width: 50vw;
@@ -176,11 +176,11 @@ nav button:hover {
   justify-content: center;
   align-items: center;
 }
-#agents .agents-main .agent-img img{
+#agents .agents-main .agent-img img {
   width: 35vw;
   filter: drop-shadow(20px 20px 100px white);
 }
-#agents .agents-main .agent-info{
+#agents .agents-main .agent-info {
   width: 50vw;
   height: 80vh;
   display: flex;
@@ -189,7 +189,7 @@ nav button:hover {
   justify-content: center;
   gap: 20px;
 }
-#agents .agents-main .agent-info a{
+#agents .agents-main .agent-info a {
   text-decoration: none;
   color: white;
   padding-left: 50px;
@@ -199,19 +199,20 @@ nav button:hover {
   background: black;
   font-weight: bold;
   font-size: 1.2rem;
+  border: 1px solid black;
   transition: all ease-in-out;
 }
-#agents .agents-main .agent-info p{
+#agents .agents-main .agent-info p {
   color: white;
   font-size: 1rem;
   text-align: left;
   width: 40vw;
 }
-#agents .agents-main .agent-info a:hover{
+#agents .agents-main .agent-info a:hover {
   background: white;
   color: black;
 }
-#agents-heading{
+#agents-heading {
   font-size: 10vw;
   font-family: tungstenBold;
   color: white;
@@ -226,7 +227,7 @@ nav button:hover {
   align-items: center;
 }
 
-#guns .guns-main{
+#guns .guns-main {
   height: 80vh;
   width: 100vw;
   background: white;
@@ -234,19 +235,19 @@ nav button:hover {
   align-items: center;
   justify-content: space-between;
 }
-#guns .guns-main .gun-img{
+#guns .guns-main .gun-img {
   height: 80vh;
   width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#guns .guns-main .gun-img img{
+#guns .guns-main .gun-img img {
   width: 35vw;
   filter: drop-shadow(20px 20px 40px #000);
 }
 
-#guns .guns-main .gun-info{
+#guns .guns-main .gun-info {
   width: 50vw;
   height: 80vh;
   display: flex;
@@ -255,14 +256,14 @@ nav button:hover {
   align-items: start;
   gap: 20px;
 }
-#guns .guns-main .gun-info h1{
-  font-family: tungstenBold ;
+#guns .guns-main .gun-info h1 {
+  font-family: tungstenBold;
   font-size: 10vw;
 }
-#guns .guns-main .gun-info p{
+#guns .guns-main .gun-info p {
   width: 40vw;
 }
-#guns .guns-main .gun-info a{
+#guns .guns-main .gun-info a {
   text-decoration: none;
   color: white;
   padding-left: 50px;
@@ -274,32 +275,19 @@ nav button:hover {
   font-size: 1.2rem;
   border: 2px solid black;
   transition: all ease-in-out;
-
 }
-#guns .guns-main .gun-info a:hover{
+#guns .guns-main .gun-info a:hover {
   background: white;
   color: black;
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
 /* FOOTER SECTION CSS 👇 */
-footer{
+footer {
   height: 10vh;
   width: 100vw;
   background: black;
 }
-footer h1{
+footer h1 {
   color: white;
   text-align: center;
 }
