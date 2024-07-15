@@ -1,117 +1,145 @@
+@font-face {
+  font-family: tungstenBold;
+  src: url(../Assets/Fonts/Tungsten-Bold.ttf);
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: red;
-    min-height: 100vh;
-    width: 100vw;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: red;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-  
-.container {
-    width: 100%;
-    min-height: 100vh;
-    background-color:white;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 100px);
-    gap: 10px;
-}
-
-.gun-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 0;
-    padding: 10px;
-    width: 100px;
-    height: 100px;
-    background-color: gray;
-}
-
-.gunDetailsDiv {
-    display: flex;
-    flex-direction: column;
-    background-color: red;
-}
-
-.gun-item img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-}
-
-
-/* GUNS DETAILS CSSS */
-.gun-details-main{
-    height: 100vh;
-    width: 100vw;
-    background: black;
-    display: flex;
-    align-items: center;
-}
-.gun-details-container{
-    height: 50vh;
-    width: 100vw;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gun-image{
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gun-details{
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-
-a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 18px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1 {
-    margin-top: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.hidden {
+::-webkit-scrollbar{
     display: none;
 }
 
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  /* grid-template-rows: repeat(2, 100px); */
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.gun-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 0;
+  padding: 2px;
+  height: 400px;
+  width: 300px;
+  background: #2222224f;
+  border-radius: 12px;
+}
+
+.gunDetailsDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+ 
+}
+.gunDetailsDiv h1 {
+  font-family: tungstenBold;
+}
+.gun-item img {
+  width: 350px;
+  height: auto;
+  margin-right: 20px;
+  filter: drop-shadow(10px 10px 10px #222);
+}
+
+/* GUNS DETAILS CSSS */
+.gun-details-main {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  display: flex;
+  align-items: center;
+}
+.gun-details-container {
+  height: 50vh;
+  width: 100vw;
+  background: #BBBBBB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gun-image {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(10px 10px 10px #222);
+  transition: ease-in-out 1s all;
+}
+.gun-image img:hover{
+    scale: 1.1;
+    
+}
+.gun-details {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gun-details h1 {
+  color: white;
+  font-family: tungstenBold;
+  font-size: 5vw;
+}
+
+a {
+  text-decoration: none;
+  background-color: #ff4655;
+  padding: 10px 40px;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 2px;
+}
+
+a:hover {
+  background: white;
+  color: black;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
 #back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  background-color: #ff4655;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 #back-button:hover {
-    background-color: #0056b3;
+  background-color: #ff4656e6;
 }
