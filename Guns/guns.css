@@ -10,7 +10,7 @@ body {
 .container {
     width: 100%;
     min-height: 100vh;
-    background-color: #ff4655;
+    background-color:white;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 100px);
@@ -40,6 +40,43 @@ body {
     height: auto;
     margin-right: 20px;
 }
+
+
+/* GUNS DETAILS CSSS */
+.gun-details-main{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+.gun-details-container{
+    height: 50vh;
+    width: 100vw;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gun-image{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gun-details{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 a {
     text-decoration: none;
