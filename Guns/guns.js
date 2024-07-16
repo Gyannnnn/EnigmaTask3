@@ -56,7 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="gun-details" >
          <h1>${gun.displayName}</h1>
-        <p>${gun.description}</p>
+        <div>
+        <p>${gun.category}</p>
+        <p>firerate${gun.weaponStats.fireRate}</p>
+        <p>Reload Time - ${gun.weaponStats.reloadTimeSeconds}s</p>
+        <p>Magazine Size - ${gun.weaponStats.magazineSize}</p>
+        <p>First Bullet Accuracy  ${gun.weaponStats.firstBulletAccuracy}</p>
+        </div>
         <button id="back-button">Back</button>
         </div>
         </div>

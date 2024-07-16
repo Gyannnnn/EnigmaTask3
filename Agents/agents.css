@@ -67,6 +67,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 .agent-image{
   width: 50vw;
