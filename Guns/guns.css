@@ -141,5 +141,6 @@ img {
 }
 
 #back-button:hover {
-  background-color: #ff4656e6;
+  background-color: white;
+  color: black;
 }
