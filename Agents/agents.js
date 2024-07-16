@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         agentDetailsDiv.classList.add("agentDetailsDiv");
   
         const img = document.createElement("img");
-        img.src = agent.fullPortrait;
+        img.src = agent.fullPortrait || "https://cdni.iconscout.com/illustration/premium/thumb/something-went-wrong-2511607-2133695.png";
         img.alt = agent.displayName;
   
         const heading = document.createElement("h1");
