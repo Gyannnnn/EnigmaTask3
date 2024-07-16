@@ -259,6 +259,7 @@ nav #about-us:hover {
 #guns .guns-main .gun-info h1 {
   font-family: tungstenBold;
   font-size: 10vw;
+  text-transform: uppercase;
 }
 #guns .guns-main .gun-info p {
   width: 40vw;
