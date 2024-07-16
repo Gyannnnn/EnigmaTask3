@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         agentDetailsDiv.classList.add("agentDetailsDiv");
   
         const img = document.createElement("img");
-        img.src = agent.displayIcon;
+        img.src = agent.fullPortrait;
         img.alt = agent.displayName;
   
         const heading = document.createElement("h1");
