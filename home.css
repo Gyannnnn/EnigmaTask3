@@ -243,7 +243,6 @@ nav {
 .guns-main {
   height: 80vh;
   width: 100vw;
-  background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -383,5 +382,56 @@ footer {
 
   .hamburger {
     display: block;
+  }
+}
+
+
+
+@media (max-width:1436px){
+  .gun-img img{
+    width: 500px;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  .guns-main {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .gun-img {
+    height: 40vh;
+    width: 100vw;
+    align-items: center;
+  }
+  .gun-info{
+    height: 40vh;
+    width: 100vw;
+    align-items: center;
+
+  }
+ 
+}
+
+@media (max-width:768px){
+  .gun-img img{
+    width: 400px;
+
+  }
+  .gun-info p{
+    width: 90vw;
+  }
+
+}
+
+
+@media (max-width:768px){
+  footer .logos img{
+    width: 150px;
+
   }
 }
