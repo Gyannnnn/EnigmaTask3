@@ -7,5 +7,6 @@
 .aboutHeading{
     font-family: abth;
     text-transform: uppercase;
+    text-decoration: line-through;
 
 }
