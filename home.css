@@ -334,7 +334,7 @@ footer .logos img {
 #loader{
   height: 100vh;
   width: 100vw;
-  background: #000 url(./Assets/loader.webp) no-repeat center;
+  background: #000 url(./Assets/loader.webp) no-repeat center center;
   
   background-size: 8%;
   position: fixed;

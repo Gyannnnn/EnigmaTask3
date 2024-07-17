@@ -19,10 +19,7 @@
     />
   </head>
   <body>
-    <div id="loader">
-      
-
-    </div>
+    <div id="loader"></div>
     <nav>
       <div id="mainLogo" class="colored-logo"></div>
       <div class="anchor-div">
@@ -93,5 +90,11 @@
         <p>&copy;Code Panthers. All Rights Reserved</p>
       </div>
     </footer>
+    <script>
+      let loader = document.getElementById("loader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
