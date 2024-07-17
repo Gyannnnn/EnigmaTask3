@@ -1,0 +1,11 @@
+@font-face {
+    font-family: abth;
+    src: url(../Assets/Fonts/aboutus\ heading.ttf);
+}
+
+
+.aboutHeading{
+    font-family: abth;
+    text-transform: uppercase;
+
+}
