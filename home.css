@@ -439,6 +439,32 @@ footer {
   footer{
     justify-content: space-around;
   }
+  #agents-heading{
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  
+
+  }
+  .agent-info a{
+    padding: 10px 30px 10px 30px;
+    border-radius: 2px;
+
+  }
+  .gun-info h1{
+    font-weight: lighter;
+    font-size: 50px;
+  }
+  .gun-info a{
+    padding: 10px 30px 10px 30px;
+    border-radius: 2px;
+  }
+  #footerp{
+    font-size: 10px;
+  }
+  .home-buttons{
+    gap: 20px;
+  }
  
 }
 
@@ -454,6 +480,7 @@ footer {
     width: 90vw;
   }
 
+
 }
 
 
@@ -462,6 +489,7 @@ footer {
     width: 150px;
 
   }
+
 
 }
 

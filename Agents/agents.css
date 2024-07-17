@@ -147,14 +147,29 @@ body {
   .agent-item img{
     width: 350px;
   }
+  .agent-item h1{
+    font-weight: lighter;
+    font-size: 50px;
+  }
+  .agent-details h1{
+    color: white;
+    font-weight: lighter;
+    font-size: 50px;
+  }
 
   
 }
+
+
+
+
+
 @media screen and (max-width: 700px){
   .agent-details p{
     width: 90vw;
     text-align: center;
   }
+ 
   .agent-image img{
     width: 200px;
   }

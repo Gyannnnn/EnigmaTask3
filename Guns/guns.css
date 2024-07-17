@@ -51,6 +51,7 @@ body {
 }
 .gunDetailsDiv h1 {
   font-family: tungstenBold;
+  
 }
 .gun-item img {
   width: 350px;
@@ -213,6 +214,14 @@ img {
   }
   .gun-details-main{
     overflow: hidden;
+  }
+  .gunDetailsDiv h1{
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+  .gun-details h1{
+    font-weight: lighter;
+    font-size: 50px;
   }
 
 }
