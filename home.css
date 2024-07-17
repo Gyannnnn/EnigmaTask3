@@ -13,6 +13,8 @@
 html,
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 ::-webkit-scrollbar {
@@ -434,6 +436,9 @@ footer {
     height: 50vh;
     align-items: center;
   }
+  footer{
+    justify-content: space-around;
+  }
  
 }
 
@@ -465,4 +470,38 @@ footer {
   #home .home-buttons img{
     height: 71px;
   }
+}
+
+
+@media (max-width:376px){
+  #agents .agents-main .agent-img img{
+    width: 250px;
+  }
+  #guns .guns-main .gun-img img{
+    width: 250px;
+  }
+  footer .logos img{
+    width: 50px;
+
+  }
+}
+
+@media (max-width:415px) {
+  footer{
+    justify-content: space-around;
+  }
+  
+}
+
+@media (max-width:391px) {
+  footer{
+    justify-content: space-around;
+  }
+  footer .logos img{
+    width: 120px;
+  }
+  footer div p{
+    font-size: 1rem;
+  }
+  
 }
