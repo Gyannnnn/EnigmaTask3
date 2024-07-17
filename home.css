@@ -391,6 +391,9 @@ footer {
   .gun-img img{
     width: 500px;
   }
+  .agent-img img{
+    width: 500px;
+  }
 
 }
 
@@ -414,6 +417,23 @@ footer {
     align-items: center;
 
   }
+  .agents-main{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .agent-img{
+    width: 100vw;
+    height: 50vh;
+  }
+  .agent-img img{
+    width: 400px;
+  }
+  .agent-info{
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+  }
  
 }
 
@@ -425,6 +445,9 @@ footer {
   .gun-info p{
     width: 90vw;
   }
+  .agent-info p{
+    width: 90vw;
+  }
 
 }
 
@@ -433,5 +456,13 @@ footer {
   footer .logos img{
     width: 150px;
 
+  }
+
+}
+
+
+@media (max-width:570px){
+  #home .home-buttons img{
+    height: 70px;
   }
 }
