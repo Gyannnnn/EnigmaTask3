@@ -8,9 +8,16 @@
   <link rel="stylesheet" href="guns.css">
 </head>
 <body>
+  <div id="loader"></div>
   
   <div id="gun-list" class="container"></div>
   <div id="gun-detail" class="container hidden"></div>
+  <script>
+    let loader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+  </script>
   <script src="guns.js"></script>
 </body>
 </html>
