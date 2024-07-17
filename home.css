@@ -14,6 +14,7 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -29,11 +30,10 @@ nav {
   position: fixed;
   top: 0;
   z-index: 10;
+  padding: 0 20px;
 }
 
-/* Logo styling */
 .colored-logo {
-  margin-left: 20px;
   width: 80px;
   height: 80px;
   background-color: white;
@@ -48,20 +48,19 @@ nav {
   background-color: #ff4655;
 }
 
-/* Navigation links styling */
-nav .anchor-div {
+.anchor-div {
   display: flex;
   gap: 50px;
 }
 
-nav div #nav-ancors {
+.nav-ancors {
   text-decoration: none;
   color: white;
   font-size: 20px;
   padding: 5px 20px;
 }
 
-nav div #nav-ancors:hover {
+.nav-ancors:hover {
   background: #333333;
   border-radius: 10px;
   text-decoration: underline;
@@ -70,26 +69,30 @@ nav div #nav-ancors:hover {
   text-underline-offset: 5px;
 }
 
-/* Button styling */
-nav #about-us {
+#about-us {
   padding: 10px 20px;
-  margin-right: 20px;
   background: #ff4655;
   border-radius: 50px;
   color: white;
   border: none;
   font-size: 1rem;
   text-decoration: none;
-  font-size: 1rem;
-  /* text-decoration: none;
-  color: red;
-  background: #ff4655; */
 }
 
-nav #about-us:hover {
+#about-us:hover {
   cursor: pointer;
   background: white;
   color: black;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger i {
+  font-size: 1.5rem;
+  color: white;
 }
 
 /* Home section styling */
@@ -100,8 +103,7 @@ nav #about-us:hover {
   overflow: hidden;
 }
 
-/* Background video styling */
-#home .background-video-div {
+.background-video-div {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -121,8 +123,7 @@ nav #about-us:hover {
   transform: translate(-50%, -50%);
 }
 
-/* Home buttons and logo styling */
-#home .home-buttons {
+.home-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +133,8 @@ nav #about-us:hover {
   transform: translate(-50%, -50%);
   z-index: 5;
 }
-#home .home-buttons a {
+
+.home-buttons a {
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -145,11 +147,13 @@ nav #about-us:hover {
   border-radius: 50px;
   font-weight: bolder;
 }
-#home .home-buttons a:hover {
+
+.home-buttons a:hover {
   background: white;
   color: black;
 }
-#home .home-buttons img {
+
+.home-buttons img {
   height: 100px;
 }
 
@@ -162,25 +166,29 @@ nav #about-us:hover {
   justify-content: center;
   align-items: center;
 }
-#agents .agents-main {
+
+.agents-main {
   height: 80vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#agents .agents-main .agent-img {
+
+.agent-img {
   width: 50vw;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#agents .agents-main .agent-img img {
+
+.agent-img img {
   width: 35vw;
   filter: drop-shadow(20px 20px 100px white);
 }
-#agents .agents-main .agent-info {
+
+.agent-info {
   width: 50vw;
   height: 80vh;
   display: flex;
@@ -189,7 +197,8 @@ nav #about-us:hover {
   justify-content: center;
   gap: 20px;
 }
-#agents .agents-main .agent-info a {
+
+.agent-info a {
   text-decoration: none;
   color: white;
   padding-left: 50px;
@@ -202,22 +211,26 @@ nav #about-us:hover {
   border: 1px solid black;
   transition: all ease-in-out;
 }
-#agents .agents-main .agent-info p {
+
+.agent-info p {
   color: white;
   font-size: 1rem;
   text-align: left;
   width: 40vw;
 }
-#agents .agents-main .agent-info a:hover {
+
+.agent-info a:hover {
   background: white;
   color: black;
 }
+
 #agents-heading {
   font-size: 10vw;
   font-family: tungstenBold;
   color: white;
   text-transform: uppercase;
 }
+
 /* Guns page styling */
 #guns {
   height: 100vh;
@@ -227,7 +240,7 @@ nav #about-us:hover {
   align-items: center;
 }
 
-#guns .guns-main {
+.guns-main {
   height: 80vh;
   width: 100vw;
   background: white;
@@ -235,19 +248,21 @@ nav #about-us:hover {
   align-items: center;
   justify-content: space-between;
 }
-#guns .guns-main .gun-img {
+
+.gun-img {
   height: 80vh;
   width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#guns .guns-main .gun-img img {
+
+.gun-img img {
   width: 35vw;
   filter: drop-shadow(20px 20px 40px #000);
 }
 
-#guns .guns-main .gun-info {
+.gun-info {
   width: 50vw;
   height: 80vh;
   display: flex;
@@ -256,15 +271,18 @@ nav #about-us:hover {
   align-items: start;
   gap: 20px;
 }
-#guns .guns-main .gun-info h1 {
+
+.gun-info h1 {
   font-family: tungstenBold;
   font-size: 10vw;
   text-transform: uppercase;
 }
-#guns .guns-main .gun-info p {
+
+.gun-info p {
   width: 40vw;
 }
-#guns .guns-main .gun-info a {
+
+.gun-info a {
   text-decoration: none;
   color: white;
   padding-left: 50px;
@@ -277,7 +295,8 @@ nav #about-us:hover {
   border: 2px solid black;
   transition: all ease-in-out;
 }
-#guns .guns-main .gun-info a:hover {
+
+.gun-info a:hover {
   background: white;
   color: black;
 }
@@ -295,48 +314,74 @@ footer {
   padding: 10px 0px;
   border-radius: 20px 20px 0px 0px;
 }
-footer .icons {
+
+.icons {
   width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
- 
 }
-footer .icons a{
+
+.icons a {
   text-decoration: none;
   color: white;
   z-index: 10;
 }
-footer .icons .fa-brands {
+
+.icons .fa-brands {
   background: grey;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px white;
   font-size: 1.2rem;
-
 }
-footer .logos {
+
+.logos {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-footer .logos h1 {
+
+.logos h1 {
   padding-left: 10px;
   font-size: 4rem;
 }
 
-footer .logos img {
+.logos img {
   width: 200px;
   z-index: 1;
 }
 
-#loader{
+#loader {
   height: 100vh;
   width: 100vw;
   background: #000 url(./Assets/loader.webp) no-repeat center center;
-  
   background-size: 8%;
   position: fixed;
   z-index: 1000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .anchor-div {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background: #111111;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    left: 0;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .anchor-div.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }

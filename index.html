@@ -1,100 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GROUP 3 VALORENT</title>
-    <link
-      rel="shortcut icon"
-      href="./Assets/favicon.webp"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="home.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div id="loader"></div>
-    <nav>
-      <div id="mainLogo" class="colored-logo"></div>
-      <div class="anchor-div">
-        <a id="nav-ancors" href="#">Home</a>
-        <a id="nav-ancors" href="#agents">Agents</a>
-        <a id="nav-ancors" href="#guns">Guns</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GROUP 3 VALORENT</title>
+  <link rel="shortcut icon" href="./Assets/favicon.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="loader"></div>
+  <nav>
+    <div id="mainLogo" class="colored-logo"></div>
+    <div class="anchor-div">
+      <a class="nav-ancors" href="#">Home</a>
+      <a class="nav-ancors" href="#agents">Agents</a>
+      <a class="nav-ancors" href="#guns">Guns</a>
+      <a id="about-us" href="./About/about.html">About Us</a>
+    </div>
+    <div class="hamburger">
+      <i class="fa fa-bars"></i>
+    </div>
+  </nav>
+  <section id="home">
+    <div class="background-video-div">
+      <video autoplay muted loop src="./Assets/home.mp4"></video>
+    </div>
+    <div class="home-buttons">
+      <img src="./Assets/valorent-log.webp" alt="" />
+      <a href="#agents">Explore </a>
+    </div>
+  </section>
+  <section id="agents">
+    <div class="agents-main">
+      <div class="agent-img">
+        <img src="./Assets/agents.webp" alt="" srcset="" />
       </div>
-      <div>
-        <a id="about-us" href="./About/about.html">About Us</a>
+      <div class="agent-info">
+        <h1 id="agents-heading">Our Agents</h1>
+        <p>
+          More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same.
+        </p>
+        <a href="./Agents/Agents.html">View Agents</a>
       </div>
-    </nav>
-    <section id="home">
-      <div class="background-video-div">
-        <video autoplay muted loop src="./Assets/home.mp4"></video>
+    </div>
+  </section>
+  <section id="guns">
+    <div class="guns-main">
+      <div class="gun-img">
+        <img src="./Assets/guns-main.png" alt="" />
       </div>
-      <div class="home-buttons">
-        <img src="./Assets/valorent-log.webp" alt="" />
-        <a href="#agents">Explore </a>
+      <div class="gun-info">
+        <h1>Our Guns</h1>
+        <p>
+          More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same.
+        </p>
+        <a href="./Guns/guns.html">View Guns</a>
       </div>
-    </section>
-    <section id="agents">
-      <div class="agents-main">
-        <div class="agent-img">
-          <img src="./Assets/agents.webp" alt="" srcset="" />
-        </div>
-        <div class="agent-info">
-          <h1 id="agents-heading">Our Agents</h1>
-          <p>
-            More than guns and bullets, you’ll choose an Agent armed with
-            adaptive, swift, and lethal abilities that create opportunities to
-            let your gunplay shine. No two Agents play alike, just as no two
-            highlight reels will look the same.
-          </p>
-          <a href="./Agents/Agents.html">View Agents</a>
-        </div>
-      </div>
-    </section>
-    <section id="guns">
-      <div class="guns-main">
-        <div class="gun-img">
-          <img src="./Assets/guns-main.png" alt="" />
-        </div>
-        <div class="gun-info">
-          <h1>Our Guns</h1>
-          <p>
-            More than guns and bullets, you’ll choose an Agent armed with
-            adaptive, swift, and lethal abilities that create opportunities to
-            let your gunplay shine. No two Agents play alike, just as no two
-            highlight reels will look the same.
-          </p>
-          <a href="./Guns/guns.html">View Guns</a>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="icons">
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-      </div>
-      <div class="logos">
-        <img src="./Assets/enigma logo.jpeg" alt="" />
-        <h1>X</h1>
-        <img src="./Assets/Code Panthers.png" alt="" />
-      </div>
-      <div>
-        <p>&copy;Code Panthers. All Rights Reserved</p>
-      </div>
-    </footer>
-    <script>
-      let loader = document.getElementById("loader");
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
-    </script>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <div class="logos">
+      <img src="./Assets/enigma logo.jpeg" alt="" />
+      <h1>X</h1>
+      <img src="./Assets/Code Panthers.png" alt="" />
+    </div>
+    <div>
+      <p>&copy;Code Panthers. All Rights Reserved</p>
+    </div>
+  </footer>
+  <script>
+    let loader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.anchor-div').classList.toggle('active');
+    });
+  </script>
+</body>
 </html>
