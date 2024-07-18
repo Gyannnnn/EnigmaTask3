@@ -451,6 +451,9 @@ footer {
     border-radius: 2px;
 
   }
+  .agent-info p{
+    text-align: center;
+  }
   .gun-info h1{
     font-weight: lighter;
     font-size: 50px;
@@ -458,6 +461,9 @@ footer {
   .gun-info a{
     padding: 10px 30px 10px 30px;
     border-radius: 2px;
+  }
+  .gun-info p{
+    text-align: center;
   }
   #footerp{
     font-size: 10px;
